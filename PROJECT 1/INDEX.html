@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Quest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+  <div id="level-up-banner" class="level-up-banner">
+    <img src="./leveluup/levelupp.png" alt="Level Up">
+</div>  
+    
+<div class="avatar-select">
+
+    <h2>Choose your avatar</h2>
+
+    <div class="avatar-grid">
+
+       <img src="./avatars/bmo rage.jpg" class="avatar-option">
+       <img src="./avatars/cat minecraft.jpg" class="avatar-option">
+       <img src="./avatars/huh.jpg" class="avatar-option">
+       <img src="./avatars/pou pou.jpg" class="avatar-option">
+       <img src="./avatars/sheriff wudy.jpg" class="avatar-option">
+
+    </div>
+
+    <header>
+        <h1>ENGLISH QUEST</h1>
+    </header>
+
+    <main class="container">
+
+        <aside class="left-panel">
+             <h2>❤️ STATUS</h2>
+
+    <div class="status-card">
+
+        <h3>Lives</h3>
+
+       <div class="lives">
+
+    <img src="./iimagens/coraçao minecraft.png" class="heart" id="heart1">
+
+    <img src="./iimagens/coraçao minecraft.png" class="heart" id="heart2">
+
+    <img src="./iimagens/coraçao minecraft.png" class="heart" id="heart3">
+
+</div>
+
+        <h3>Level</h3>
+
+        <p id="level">1</p>
+
+       <p id="xp">XP: 0</p>
+
+        <div class="xp-bar">
+            <div class="xp-fill"></div>
+        </div>
+
+<p id="correct">✔ Correct: 0</p>
+
+<p id="wrong">❌ Wrong: 0</p>
+
+<p id="combo">🔥 Combo: 0</p>
+
+    </div>
+<div class="music-box">
+
+    <h3>🎵 Music</h3>
+
+    <img
+        id="music-gif"
+        src="./iimagens/jake-dance.gif"
+        class="music-gif"
+    >
+<p id="now-playing">Now Playing</p>
+
+<p id="music-name">Blue Dream</p>
+
+    <select id="music-select">
+
+        <option value="./music/blue dream.mpeg">
+            Blue Dream
+        </option>
+
+        <option value="./music/confort chaim.mpeg">
+            Confort Chaim
+        </option>
+
+        <option value="./music/subwoofer.mpeg">
+            Subwoofer
+        </option>
+
+        <option value="./music/sweden.mpeg">
+            Sweden
+        </option>
+
+    </select>
+
+    <div class="music-buttons">
+
+        <button id="play-btn">▶</button>
+
+        <button id="pause-btn">⏸</button>
+
+    </div>
+
+</div>
+
+        </aside>
+
+        <section class="game-panel">
+              <h2>❓ QUESTION</h2>
+        
+    <div class="question-card">
+
+      <div class="bot-container">
+
+             <div class="timer-box">
+        ⏱️ <span id="timer">01:30</span>
+    </div>
+
+            <div class="speech-box">
+
+                <p id="question">
+                    What is your favorite color?
+                </p>
+
+                <span id="translation">
+                    (Qual é sua cor favorita?)
+                </span>
+
+            </div>
+                              
+            <img
+    id="teacher"
+    src="./iimagens/bmo.gif"
+    class="teacher"
+>
+
+<div class="answers">
+
+    <button class="answer-btn">
+        <span class="letter">A</span>
+        <span class="answer-text" id="answer0">Green</span>
+    </button>
+
+    <button class="answer-btn">
+        <span class="letter">B</span>
+        <span class="answer-text" id="answer1">Blue</span>
+    </button>
+
+    <button class="answer-btn">
+        <span class="letter">C</span>
+        <span class="answer-text" id="answer2">Yellow</span>
+    </button>
+
+    <button class="answer-btn">
+        <span class="letter">D</span>
+        <span class="answer-text" id="answer3">Black</span>
+    </button>
+
+</div>
+
+        </section>
+
+        <aside class="right-panel">
+            <h2> PLAYER</h2>
+
+    <div class="avatar">
+
+    <img id="player-avatar" src="" alt="">
+
+</div>
+
+        <h3 id="player-name">Player</h3>
+
+        <p>Level 1</p>
+
+        <p>XP: 0</p>
+
+        <div class="rank">
+            Beginner
+        </div>
+
+    </div>
+        </aside>
+
+    </main>
+
+<audio id="player"></audio>
+
+<audio id="level-up-sound" src="./songs generic/levelup.mp3"></audio>
+
+<div id="game-over-screen" class="game-over-screen">
+    <img src="./leveluup/game over.gif" id="game-over-gif">
+
+    <h1>GAME OVER</h1>
+
+    <p>You lost all your lives!</p>
+
+    <h2 id="respawn-counter">30</h2>
+
+    <span>Respawning...</span>
+</div>
+
+<script src="./questions.js"></script>
+<script src="./script.js"></script>
+
+
+</body>
+
+</html>
